@@ -4,7 +4,6 @@ from keras.datasets import mnist
 from tensorflow.keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D
-from keras.history
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras import backend as K
 
@@ -75,7 +74,7 @@ model.compile(loss = tensorflow.keras.losses.categorical_crossentropy,
 
 history = model.fit(X_train, y_train,
                     batch_size = 128,
-                    epochs = 12,
+                    epochs = 4,
                     verbose=1,
                     validation_data = (X_test, y_test))
 
