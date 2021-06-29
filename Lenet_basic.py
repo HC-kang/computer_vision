@@ -99,7 +99,7 @@ validation, label_batch = next(iter(valid_generator))
 prediction_values = model.predict_classes(validation)
 
 fig = plt.figure(figsize = (12, 8))
-fig.aubplots_adjust(left = 0, right = 1, bottom = 0, top = 1, hspace = 0.05, wspace = 0.05)
+fig.subplots_adjust(left = 0, right = 1, bottom = 0, top = 1, hspace = 0.05, wspace = 0.05)
 
 for i in range(8):
     ax = fig.add_subplot(2, 4, i+1, xticks=[], yticks=[])
